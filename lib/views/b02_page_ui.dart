@@ -24,7 +24,7 @@ class _B02PageUIState extends State<B02PageUI> {
             Text (
               "Login here",
               style: TextStyle(
-                fontSize: MediaQuery.of(context).size.height * 0.035,
+                fontSize: MediaQuery.of(context).size.height * 0.025,
                 fontWeight: FontWeight.bold,
                 color: const Color.fromARGB(255, 14, 0, 141),
               ),
@@ -35,16 +35,16 @@ class _B02PageUIState extends State<B02PageUI> {
             Text (
               "Welcome back you've",
               style: TextStyle(
-                fontSize: MediaQuery.of(context).size.height * 0.025,
-                fontWeight: FontWeight.bold,
+                fontSize: MediaQuery.of(context).size.height * 0.015,
+                fontWeight: FontWeight.normal,
                 color: Colors.black,
               ),
             ),
             Text (
               "been missed",
               style: TextStyle(
-                fontSize: MediaQuery.of(context).size.height * 0.025,
-                fontWeight: FontWeight.bold,
+                fontSize: MediaQuery.of(context).size.height * 0.015,
+                fontWeight: FontWeight.normal,
                 color: Colors.black,
               ),
             ),
@@ -124,7 +124,7 @@ class _B02PageUIState extends State<B02PageUI> {
                   ElevatedButton(
                     onPressed: () {},
                     child: Text(
-                      "Sigin in",
+                      "Sign in",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
@@ -146,7 +146,7 @@ class _B02PageUIState extends State<B02PageUI> {
                   ),
 
                   SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.02
+                    height: MediaQuery.of(context).size.height * 0.015
                   ),
 
                   Stack(
