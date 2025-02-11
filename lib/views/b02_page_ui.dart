@@ -199,34 +199,42 @@ class _B02PageUIState extends State<B02PageUI> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Container(
+                        width: 80, // กำหนดความกว้าง
                         padding: EdgeInsets.all(10),
                         decoration: BoxDecoration(
                           color: const Color.fromARGB(40, 0, 0, 0),
                           borderRadius: BorderRadius.circular(10),
                           
                         ),
-                        child: FaIcon(FontAwesomeIcons.google, color: Colors.black, size: 30),
+                        child: Center(
+                          child: FaIcon(FontAwesomeIcons.google, color: Colors.black, size: 30),
+                        ),
                       ),
                       SizedBox(width: 20),
                       Container(
+                        width: 80, // กำหนดความกว้าง
                         padding: EdgeInsets.all(10),
                         decoration: BoxDecoration(
                           color: const Color.fromARGB(40, 0, 0, 0),
                           borderRadius: BorderRadius.circular(10),
                           
                         ),
-                        child: FaIcon(FontAwesomeIcons.facebook, color: Colors.black, size: 30),
+                        child: Center(
+                          child: FaIcon(FontAwesomeIcons.facebook, color: Colors.black, size: 30),
+                        ),
                       ),
                       SizedBox(width: 20),
                       Container(
+                        width: 80, // กำหนดความกว้าง
                         padding: EdgeInsets.all(10),
                         decoration: BoxDecoration(
                           color: const Color.fromARGB(40, 0, 0, 0),
                           borderRadius: BorderRadius.circular(10),
-                          
-                          
+
                         ),
-                        child: FaIcon(FontAwesomeIcons.apple, color: Colors.black, size: 30),
+                        child: Center(
+                          child: FaIcon(FontAwesomeIcons.apple, color: Colors.black, size: 30),
+                        ),
                       ),
                     ],
                   )

@@ -30,26 +30,22 @@ class _C01PageUIState extends State<C01PageUI> {
     return Scaffold(
       body: Stack(
         children: [
-          /// 🔹 **ทำให้ภาพพื้นหลังเต็มจอ**
           SizedBox.expand(
             child: Image.asset(
-              "assets/images/c/imgc1.png", // ✅ ตรวจสอบ path ให้ถูกต้อง
+              "assets/images/c/imgc1.png",
               fit: BoxFit.cover,  
               alignment: Alignment.center,
             ),
           ),
 
-          /// 🔹 **เนื้อหาอยู่ด้านหน้า**
           SafeArea(
             child: Column(
-              /// ✅ **จัดให้อยู่ตรงกลาง**
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const Spacer(),
 
-                /// 🔹 **โลโก้ "H" เป็นรูป**
-                Center(  // ✅ **ใช้ Center เพื่อให้อยู่ตรงกลาง**
+                Center(
                   child: Container(
                     padding: const EdgeInsets.all(20),
                     decoration: BoxDecoration(
@@ -66,8 +62,7 @@ class _C01PageUIState extends State<C01PageUI> {
 
                 const SizedBox(height: 20),
 
-                /// 🔹 **ชื่อแอป**
-                const Center(  // ✅ **จัดข้อความให้อยู่ตรงกลาง**
+                const Center(
                   child: Text(
                     "HOPE FOR\nHUMANITY",
                     textAlign: TextAlign.center,
@@ -81,8 +76,7 @@ class _C01PageUIState extends State<C01PageUI> {
 
                 const Spacer(),
 
-                /// 🔹 **ข้อความต้อนรับ**
-                const Center(  // ✅ **จัดข้อความให้อยู่ตรงกลาง**
+                const Center(
                   child: Text(
                     "Welcome to\nhope for humanity",
                     textAlign: TextAlign.center,
