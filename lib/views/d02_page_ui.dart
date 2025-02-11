@@ -83,12 +83,14 @@ class _D02PageUIState extends State<D02PageUI> {
               Align(
               alignment: Alignment.centerRight,
               child: TextButton(
-                onPressed: () { Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => D04PageUI(),
-                          ),
-                        );},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => D04PageUI(),
+                    ),
+                  );
+                },
                 child: Text(
                   "Forgot Password ?",
                   style: TextStyle(

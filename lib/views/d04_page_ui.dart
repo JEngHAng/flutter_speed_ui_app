@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_speed_ui_app/views/d02_page_ui.dart';
+import 'package:flutter_speed_ui_app/views/d05_page_ui.dart';
 
 class D04PageUI extends StatefulWidget {
   const D04PageUI({super.key});
@@ -73,7 +74,14 @@ class _D04PageUIState extends State<D04PageUI> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => D05PageUI(),
+                      ),
+                    );
+                  },
                     child: Text(
                       "Send Code",
                       style: TextStyle(
