@@ -163,7 +163,7 @@ class _B03PageUIState extends State<B03PageUI> {
                         );
                       },
                       child: Text(
-                        "Create new accour",
+                        "Iready have an account",
                         style: TextStyle(
                           color: const Color.fromARGB(255, 119, 119, 119),
                           fontWeight: FontWeight.bold,
