@@ -42,7 +42,7 @@ class _HomeUIState extends State<HomeUI> {
                   );
                 },
                 child: Text(
-                  "Go to B Page",
+                  "Go to A Page",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
@@ -79,7 +79,7 @@ class _HomeUIState extends State<HomeUI> {
                   );
                 },
                 child: Text(
-                  "Go to A Page",
+                  "Go to B Page",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     color: Colors.white,

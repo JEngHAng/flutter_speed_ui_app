@@ -1,5 +1,5 @@
 // ignore_for_file: sort_child_properties_last
-
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter/material.dart';
 
 class A02PageUI extends StatefulWidget {
@@ -130,26 +130,67 @@ class _A02PageUIState extends State<A02PageUI> {
               ),
             ),
             SizedBox(
-              height: MediaQuery.of(context).size.height * 0.01
+              height: MediaQuery.of(context).size.height * 0.035
             ),
-            Text(
-              "Or Sign up With",
+            Stack(
+              alignment: Alignment.center,
+              children: [
+                Divider(
+                  color: const Color.fromARGB(255, 255, 0, 247),
+                  thickness: 1,
+                  indent: 20,
+                  endIndent: 20,
+                ),
+                Container(
+                  padding: EdgeInsets.symmetric(horizontal: 10, vertical: 2),
+                  color: Colors.white, // ทำพื้นหลังให้กลบเส้นตรง
+                  child: Text(
+                    "Or Sign up With",
+                    style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),
+                  ),
+                ),
+              ],
             ),
             SizedBox(
-              height: MediaQuery.of(context).size.height * 0.01
+              height: MediaQuery.of(context).size.height * 0.045
             ),
-            OutlinedButton(
-              onPressed: () {},
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Image.asset(
-                    "assets/icon/google.png",
-                    width: MediaQuery.of(context).size.width * 0.1,
+            
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  padding: EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                    color: const Color.fromARGB(40, 0, 0, 0),
+                    shape: BoxShape.circle,
+                    border: Border.all(color: const Color.fromARGB(255, 250, 119, 239), width: 2),
                   ),
-                ],
-              ),
-            ),
+                  child: Image.asset("assets/icon/google.png", width: 30),
+                ),
+                SizedBox(width: 20),
+                Container(
+                  padding: EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                    color: const Color.fromARGB(40, 0, 0, 0),
+                    shape: BoxShape.circle,
+                    border: Border.all(color:  const Color.fromARGB(255, 250, 119, 239), width: 2),
+                  ),
+                  child: Image.asset("assets/icon/facebook.png", width: 30),
+                ),
+                SizedBox(width: 20),
+                Container(
+                  padding: EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                    color: const Color.fromARGB(40, 0, 0, 0),
+                    shape: BoxShape.circle,
+                    border: Border.all(color: const Color.fromARGB(255, 250, 119, 239), width: 2),
+                  ),
+                  child: Image.asset("assets/icon/apple.png", width: 30),
+                ),
+              ],
+            )
+
+            // ทำicon google face apple ต่อนะจ๊ะ
           ],
         ),
       ),

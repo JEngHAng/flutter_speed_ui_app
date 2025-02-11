@@ -86,14 +86,7 @@ class _A01PageUIState extends State<A01PageUI> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => A02PageUI(),
-                    ),
-                  );
-                },
+                onPressed: () {},
                 child: Text(
                   "Sign in",
                   style: TextStyle(
