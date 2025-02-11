@@ -65,10 +65,16 @@ class _A02PageUIState extends State<A02PageUI> {
                     keyboardType: TextInputType.text,
                     decoration: InputDecoration(
                       hintText: 'Username, Email & Phone Number',
+                      filled: true, // ต้องเปิด true ก่อนจึงจะใช้ fillColor ได้
+                      fillColor: const Color.fromARGB(80, 150, 150, 150),
                       hintStyle: TextStyle(
-                        color: Colors.grey[400],
+                        color: const Color.fromARGB(255, 119, 119, 119),
                       ),
-                      border: OutlineInputBorder(),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(
+                          10.0
+                        ),
+                      ),
                     ),
                   ),
                   SizedBox(
@@ -78,10 +84,16 @@ class _A02PageUIState extends State<A02PageUI> {
                     keyboardType: TextInputType.text,
                     decoration: InputDecoration(
                       hintText: 'Password',
+                      filled: true, // ต้องเปิด true ก่อนจึงจะใช้ fillColor ได้
+                      fillColor: const Color.fromARGB(80, 150, 150, 150),
                       hintStyle: TextStyle(
-                        color: Colors.grey[400],
+                        color: const Color.fromARGB(255, 119, 119, 119),
                       ),
-                      border: OutlineInputBorder(),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(
+                          10.0
+                        ),
+                      ),
                     ),
                   ),
                 ],
