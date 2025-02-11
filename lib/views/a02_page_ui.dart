@@ -1,6 +1,6 @@
 // ignore_for_file: sort_child_properties_last
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_speed_ui_app/views/a01_page_ui.dart';
 
 class A02PageUI extends StatefulWidget {
   const A02PageUI({super.key});
@@ -105,7 +105,14 @@ class _A02PageUIState extends State<A02PageUI> {
               child: Column(
                 children: [
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => A01PageUI(),
+                      ),
+                  );
+                    },
                     child: Text(
                       "Sigin in",
                       style: TextStyle(
